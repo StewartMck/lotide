@@ -19,7 +19,7 @@ const eqArrays = function(arrayA, arrayB) {
     > Same number of keys
     > Value for each key in one Object is same as value for same key in other object
 */
-const eqObjects = function (object1, object2) {
+const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   } else {
