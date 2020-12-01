@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@stewartmac/lotide",
   "version": "1.0.0",
   "description": "Modular collection of functions that operate on data, namely Arrays and Objects.",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
