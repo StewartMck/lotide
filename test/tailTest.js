@@ -1,7 +1,17 @@
-const assertEqual = require('../assertEqual');
+const assertDeepEqual = require('chai').assert.deepEqual;
 const tail = require('../tail');
 
-assertEqual(tail([5, 6, 7]), '6,7');
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]), "Lighthouse,Labs");
-assertEqual(tail([]), 5);
-assertEqual(tail([6]), 8);
+describe("#tail", () => {
+  it("should return [] when passed []", () => {
+    assertDeepEqual(tail([]), []);
+  });
+
+  it("should return [] when passed [1]", () => {
+    assertDeepEqual(tail([1]), []);
+  });
+
+  it("should return ['Lighthouse','labs'] when passed ['Hello','Lighthouse','Labs']", () => {
+    assertDeepEqual(tail(["Hello","Lighthouse","Labs"]),["Lighthouse","Labs"]);
+  });
+
+});
